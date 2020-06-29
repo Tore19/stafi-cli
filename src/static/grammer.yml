@@ -39,15 +39,15 @@ faucet:
   length: |
     The length of fis address is 48, what about yours?
   failed: |
-    Please check your fis address ;)
+    Something went wrong. Please check your fis address or wait for us to fix it ;)
   succeed: |
     Congratulations! the transaction is pending, take a look at
     
     http://apps.stafi.io/#/accounts
   interval: |
-    It seems that you have already got tokens of today, just tell me your story.
+    It seems that you have already got tokens.
     
-    (You can call me after ${hour} hrs
+    (You can call me after ${hour} hrs)
   supply: |
     We have run out our faucet supply today, trigger your clock at tomorrow morning
   address: |
@@ -55,6 +55,6 @@ faucet:
   received: |
     This address has already received the airdrop, I know this.
   config:
-    amount: 500
-    supply: 500
-    interval: 168
+    amount: 200
+    supply: 200
+    interval: 48
