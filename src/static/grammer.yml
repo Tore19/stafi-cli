@@ -20,13 +20,9 @@ docs: |
 # `more` command
 more: |
   More features can`t wait to see ya! 
-  
-  
-  
-  I'll see you on the dark side of the moon :-P
 # `about` command
 about: |
-  About me? why don't you introduce yourself first?
+  I'm the rot to send some test tokens to you.
 # `faucet` command
 faucet:
   only: >-
@@ -47,7 +43,7 @@ faucet:
   succeed: |
     Congratulations! the transaction is pending, take a look at
     
-    https://crab.subscan.io/extrinsic/${hash}
+    http://apps.stafi.io/#/accounts
   interval: |
     It seems that you have already got the CRING of today, just tell me your story.
     

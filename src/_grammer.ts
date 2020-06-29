@@ -219,14 +219,8 @@ export default class Grammer {
         cmd: string
     ): Promise<string> {
         switch (cmd) {
-            case "book":
-                return this.grammer.book;
             case "docs":
                 return this.grammer.docs;
-            case "dev":
-                return this.grammer.dev;
-            case "talk":
-                return this.grammer.talk;
             case "more":
                 return this.grammer.more;
             case "about":
@@ -306,7 +300,7 @@ export default class Grammer {
         log.trace(`${new Date()} trying to tansfer to ${addr}`);
         if (addr.length !== 48) {
             return this.grammer.faucet.length;
-        } else if (!addr.startsWith("5")) {
+        } else if (!addr.startsWith("3")) {
             return this.grammer.faucet.prefix;
         } else if (!addr.match(/CRAB/g)) {
             return this.grammer.faucet.address;
