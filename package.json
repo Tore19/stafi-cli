@@ -1,0 +1,50 @@
+{
+  "private": false,
+  "name": "@stafi/stacli",
+  "version": "0.1.1",
+  "description": "stafi ctl",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "stafi-technologies <technical@stafi.io>",
+  "license": "GPL-3.0",
+  "main": "lib/index.js",
+  "bin": {
+    "stacli": "lib/index.js"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@polkadot/api": "^1.21.1",
+    "@polkadot/keyring": "^2.16.1",
+    "@polkadot/util-crypto": "^2.16.1",
+    "@types/ioredis": "^4.16.7",
+    "@types/js-yaml": "^3.12.5",
+    "@types/progress": "^2.0.3",
+    "@types/prompts": "^2.0.8",
+    "@types/tar": "^4.0.3",
+    "@types/yargs": "^15.0.5",
+    "axios": "^0.19.2",
+    "chalk": "^4.1.0",
+    "ethereumjs-util": "^7.0.2",
+    "got": "^11.3.0",
+    "ioredis": "^4.16.3",
+    "javascript-stringify": "^2.0.1",
+    "js-yaml": "^3.13.1",
+    "node-telegram-bot-api": "^0.50.0",
+    "progress": "^2.0.3",
+    "prompts": "^2.3.2",
+    "tar": "^6.0.2",
+    "yargs": "^15.3.1"
+  },
+  "scripts": {
+    "build": "tsc --strict && rm -rf lib/src/static && cp -r src/static lib/src/static",
+    "lint": "tsc --noEmit --strict && tslint --project ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.40.3"
+  }
+}

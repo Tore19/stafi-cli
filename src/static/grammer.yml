@@ -1,0 +1,64 @@
+#
+# This file teaches how stafi-bot chats to people
+#
+# + Two empty lines means one empty line
+# + Variables syntax: `${var}
+#
+###
+# `help` command
+help: |
+  Looking for some help?
+
+  - /help   - Miss me?
+  - /docs   - Let's explore the stafi world!
+  - /more   - There must be more to life than being a bot!
+  - /about  - About me
+  - /faucet - Let`s talk about it, wouldn`t be it nice?
+# `docs` command
+docs: |
+  https://docs.stafi.io/
+# `more` command
+more: |
+  More features can`t wait to see ya! 
+  
+  
+  
+  I'll see you on the dark side of the moon :-P
+# `about` command
+about: |
+  About me? why don't you introduce yourself first?
+# `faucet` command
+faucet:
+  only: >-
+    You and I, all we got is each other in this lonesome town, 
+    but would you mind to join https://t.me/Stafi_Protocol first and talk to me later?
+  invite: |
+    Needs some CRING? Follow me: https://t.me/StafiFaucet
+  invalid: |
+    To be or not to be, that is the question.
+  empty: |
+    The airdrop has just sent to the air ;)
+  prefix: |
+    (The secret of generating a lucky address is...wubalubadubdub
+  length: |
+    The length of my crab address is 48, what about yours?
+  failed: |
+    My CRING has run out ;(, would anybody send me some?
+  succeed: |
+    Congratulations! the transaction is pending, take a look at
+    
+    https://crab.subscan.io/extrinsic/${hash}
+  interval: |
+    It seems that you have already got the CRING of today, just tell me your story.
+    
+    (You can call me after ${hour} hrs
+  supply: |
+    We have run out our faucet supply today, trigger your clock at tomorrow morning
+  address: |
+    I won't tell you that lucky folks always have the keyword `CRAB` in their addresses
+  received: |
+    This address has already received the airdrop, I know this.
+  config:
+    amount: 500
+    supply: 500
+    interval: 168
