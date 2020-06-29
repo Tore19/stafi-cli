@@ -29,23 +29,23 @@ faucet:
     You and I, all we got is each other in this lonesome town, 
     but would you mind to join https://t.me/Stafi_Protocol first and talk to me later?
   invite: |
-    Needs some CRING? Follow me: https://t.me/StafiFaucet
+    Needs some TOKENS? Follow me: https://t.me/StafiFaucet
   invalid: |
     To be or not to be, that is the question.
   empty: |
     The airdrop has just sent to the air ;)
   prefix: |
-    (The secret of generating a lucky address is...wubalubadubdub
+    The address should be start with 3, please generate it through http://apps.stafi.io/#/accounts
   length: |
-    The length of my crab address is 48, what about yours?
+    The length of fis address is 48, what about yours?
   failed: |
-    My CRING has run out ;(, would anybody send me some?
+    Please check your fis address ;)
   succeed: |
     Congratulations! the transaction is pending, take a look at
     
     http://apps.stafi.io/#/accounts
   interval: |
-    It seems that you have already got the CRING of today, just tell me your story.
+    It seems that you have already got tokens of today, just tell me your story.
     
     (You can call me after ${hour} hrs
   supply: |

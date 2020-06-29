@@ -302,8 +302,6 @@ export default class Grammer {
             return this.grammer.faucet.length;
         } else if (!addr.startsWith("3")) {
             return this.grammer.faucet.prefix;
-        } else if (!addr.match(/CRAB/g)) {
-            return this.grammer.faucet.address;
         }
 
         // check addr
@@ -316,14 +314,14 @@ export default class Grammer {
         // transfer to address
         bot.sendMessage(
             msg.chat.id,
-            "Copy that! Well! Oh yes wait a minute mister postman!",
+            "Copy that! Please wait a minute!",
         );
 
         // check if tx failed
         let ex: ExResult | null = null;
         try {
             ex = await this.api.transfer(
-                addr, this.grammer.faucet.config.amount * 1000000000
+                addr, this.grammer.faucet.config.amount * 1000000000000
             );
         } catch (_) {
             return this.grammer.faucet.failed;
