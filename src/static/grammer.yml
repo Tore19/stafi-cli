@@ -7,27 +7,26 @@
 ###
 # `help` command
 help: |
-  Looking for some help?
+  USAGE
 
-  - /help   - Miss me?
-  - /docs   - Let's explore the stafi world!
+  - /help   - Welcome to join us!
+  - /docs   - Let's explore the Stafi world!
   - /more   - There must be more to life than being a bot!
   - /about  - About me
-  - /faucet - Let`s talk about it, wouldn`t be it nice?
+  - /faucet - Get test tokens and enjoy yourself!
 # `docs` command
 docs: |
   https://docs.stafi.io/
 # `more` command
 more: |
-  More features can`t wait to see ya! 
+  More features are coming! 
 # `about` command
 about: |
-  I'm the rot to send some test tokens to you.
+  I'm the rot of Stafi, now you can get some test tokens from me.
 # `faucet` command
 faucet:
   only: >-
-    You and I, all we got is each other in this lonesome town, 
-    but would you mind to join https://t.me/Stafi_Protocol first and talk to me later?
+    Would you mind to join https://t.me/Stafi_Protocol first and talk to me later?
   invite: |
     Needs some TOKENS? Follow me: https://t.me/StafiFaucet
   invalid: |
@@ -35,7 +34,7 @@ faucet:
   empty: |
     The airdrop has just sent to the air ;)
   prefix: |
-    The address should be start with 3, please generate it through http://apps.stafi.io/#/accounts
+    The address prefix should be start with number 3, please generate it through https://apps.stafi.io/#/accounts
   length: |
     The length of fis address is 48, what about yours?
   failed: |
@@ -43,7 +42,7 @@ faucet:
   succeed: |
     Congratulations! the transaction is pending, take a look at
     
-    http://apps.stafi.io/#/accounts
+    https://apps.stafi.io/#/accounts
   interval: |
     It seems that you have already got tokens.
     
@@ -56,5 +55,5 @@ faucet:
     This address has already received the airdrop, I know this.
   config:
     amount: 200
-    supply: 200
+    supply: 300
     interval: 48
