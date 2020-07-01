@@ -251,7 +251,7 @@ export default class Grammer {
         }
 
         // Check if user in channel @StafiFaucet
-        if (msg.chat.id !== -382815454) {
+        if (msg.chat.id !== -1001392538532) {
             return this.grammer.faucet.invite + " test:" + msg.chat.id;
         }
 
