@@ -124,7 +124,7 @@ export class API {
         });
 
         const account = await API.seed(seed);
-        log.trace("init stafi api succeed");
+        log.trace("init api succeed");
         return new API(account, (api as ApiPromise), types);
     }
 

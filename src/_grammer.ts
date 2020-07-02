@@ -166,11 +166,13 @@ export default class Grammer {
         bot.on("polling_error", (msg) => log.err(msg));
         bot.onText(/^\/\w+/, async (msg) => {
             if (msg.text === undefined) {
+                log.trace("mag undefiend");
                 return false;
             }
 
             const match = msg.text.match(/\/\w+/);
             if (match === null) {
+                log.trace("mag match null");
                 return;
             }
 
@@ -201,9 +203,10 @@ export default class Grammer {
 
     private async locker() {
         const that = this;
+        log.trace(LOCKER);
         setInterval(async () => {
             const balance = await that.api.getBalance(that.api.account.address);
-            if (Number.parseInt(balance, 10) < 1000 * 1000000000) {
+            if (Number.parseInt(balance, 10) < 1000 * 1000000000000) {
                 fs.writeFileSync(LOCKER, "");
             } else {
                 if (fs.existsSync(LOCKER)) {
