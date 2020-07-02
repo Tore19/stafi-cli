@@ -166,13 +166,15 @@ export default class Grammer {
         bot.on("polling_error", (msg) => log.err(msg));
         bot.onText(/^\/\w+/, async (msg) => {
             if (msg.text === undefined) {
-                log.trace("mag undefiend");
+                log.trace("msg undefiend");
                 return false;
             }
 
+            log.trace(msg.text);
+
             const match = msg.text.match(/\/\w+/);
             if (match === null) {
-                log.trace("mag match null");
+                log.trace("msg match null");
                 return;
             }
 
