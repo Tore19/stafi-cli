@@ -170,8 +170,6 @@ export default class Grammer {
                 return false;
             }
 
-            log.trace(msg.text);
-
             const match = msg.text.match(/\/\w+/);
             if (match === null) {
                 log.trace("msg match null");
