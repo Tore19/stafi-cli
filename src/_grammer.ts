@@ -302,8 +302,6 @@ export default class Grammer {
         log.trace(`${new Date()} trying to tansfer to ${addr}`);
         if (addr.length !== 48) {
             return this.grammer.faucet.length;
-        } else if (!addr.startsWith("3")) {
-            return this.grammer.faucet.prefix;
         }
 
         // check addr
