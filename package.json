@@ -45,6 +45,7 @@
     "lint": "tsc --noEmit --strict && tslint --project ./tsconfig.json"
   },
   "devDependencies": {
-    "@types/node-telegram-bot-api": "^0.40.3"
+    "@types/node-telegram-bot-api": "^0.40.3",
+    "typescript": "^4.0.2"
   }
 }

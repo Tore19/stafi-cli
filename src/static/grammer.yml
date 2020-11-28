@@ -34,7 +34,7 @@ faucet:
   empty: |
     The airdrop has just sent to the air ;)
   prefix: |
-    The address prefix should be start with number 3, please generate it through https://apps.stafi.io/#/accounts
+    The address prefix should be start with number 2 or 3, please generate it through https://apps.stafi.io/#/accounts
   length: |
     The length of fis address is 48, what about yours?
   failed: |
@@ -54,6 +54,6 @@ faucet:
   received: |
     This address has already received the airdrop, I know this.
   config:
-    amount: 200
+    amount: 500
     supply: 300
-    interval: 48
+    interval: 12
